@@ -2,7 +2,7 @@
 
 A browser-based roguelike combat prototype featuring a dynamic **stagger/chain system** inspired by JRPG mechanics.
 
-Play the demo here-->  https://orlandoaviles.netlify.app/veldara/
+Play the demo here-->  https://tower-of-veldara.netlify.app/
 
 ---------------------------------
 
