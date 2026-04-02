@@ -28,8 +28,8 @@ export const enemy = {
 };
 
 export function resetEnemy() {
-  enemy.hp = 6000;
-  enemy.maxHp = 6000;
+  enemy.hp = 600;
+  enemy.maxHp = 600;
   enemy.atb = 0;
 
   enemy.chain = 0;
