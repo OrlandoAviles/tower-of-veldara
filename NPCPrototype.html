@@ -235,17 +235,20 @@ function draw() {
     ctx.fillRect(0, 0, 320, 180);
   }
 
-  ctx.fillStyle = '#92400e';
-  ctx.fillRect(30, 100, 20, 20);
-  ctx.fillRect(230, 100, 20, 20);
+  // draw buildings from NPC data (data-driven)
+  npcs.forEach((npc) => {
+    // 🏠 house
+    ctx.fillStyle = '#92400e';
+    ctx.fillRect(npc.homeX - 10, 100, 20, 20);
 
-  ctx.fillStyle = '#78350f';
-  ctx.fillRect(70, 110, 16, 10);
-  ctx.fillRect(190, 110, 16, 10);
+    // 🪵 shed
+    ctx.fillStyle = '#78350f';
+    ctx.fillRect(npc.shedX - 8, 110, 16, 10);
 
-  ctx.fillStyle = '#14532d';
-  ctx.fillRect(110, 120, 30, 20);
-  ctx.fillRect(150, 120, 30, 20);
+    // 🌾 field
+    ctx.fillStyle = '#14532d';
+    ctx.fillRect(npc.fieldX - 15, 120, 30, 20);
+  });
 
   npcs.forEach((npc) => {
     drawSprite(Math.round(npc.x), npc.y, npc.facingLeft);
